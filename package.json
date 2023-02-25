@@ -6,7 +6,7 @@
   "description": "A lambda function that wraps my fide-ratings-scraper project",
   "main": "index.mjs",
   "scripts": {},
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "fide-ratings-scraper": "^1.0.4"
   },

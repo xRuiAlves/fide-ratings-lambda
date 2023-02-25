@@ -6,6 +6,14 @@ import {
     getPlayerPersonalData 
 } from "fide-ratings-scraper";
 
+const OPERATIONS = Object.freeze({
+    getPlayerElo: "getPlayerElo", 
+    getPlayerHistory: "getPlayerHistory", 
+    getPlayerRank: "getPlayerRank", 
+    getPlayerFullInfo: "getPlayerFullInfo", 
+    getPlayerPersonalData: "getPlayerPersonalData"
+});
+
 const buildErrorResponse = (message) => ({
     statusCode: 400,
     body: message,

@@ -24,9 +24,8 @@ const buildResponse = (statusCode, payload) => ({
 });
 
 export const handler = async(event) => {
-    console.info(`Event body: ${event.body}`);
-    
-    const { operation, fideId } = JSON.parse(event.body);
+    const { operation, fideId } = event.queryStringParameters;
+    console.info(`Event query parameters: ${event.queryStringParameters}`);
     console.info(`Operation: ${operation}`);
     console.info(`Operation: ${fideId}`);
 

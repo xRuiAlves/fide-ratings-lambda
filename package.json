@@ -1,0 +1,13 @@
+{
+  "name": "fide-ratings-lambda",
+  "author": "Rui Alves <ruialves.esrt.98@gmail.com>",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A lambda function that wraps my fide-ratings-scraper project",
+  "main": "index.mjs",
+  "scripts": {},
+  "license": "ISC",
+  "dependencies": {
+    "fide-ratings-scraper": "^1.0.4"
+  }
+}

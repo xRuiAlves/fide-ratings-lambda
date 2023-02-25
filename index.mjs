@@ -25,4 +25,8 @@ const buildSuccessMessage = (payload) => ({
 });
 
 export const handler = async({operation, fideId}) => {
+    if (!OPERATIONS[operation]) {
+        return buildErrorResponse(`You must specify a valid 'operation' within the request's body. Valid operations: [${Object.values(OPERATIONS).join(", ")}].`); 
+    }
+    return buildSuccessMessage("Hello from Lambda");
 };

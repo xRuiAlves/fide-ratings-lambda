@@ -7,7 +7,8 @@
   "main": "index.mjs",
   "scripts": {
     "aws-lambda-configure": "scripts/aws-lambda/configure.sh",
-    "aws-lambda-bundle": "scripts/aws-lambda/bundle.sh"
+    "aws-lambda-bundle": "scripts/aws-lambda/bundle.sh",
+    "aws-lambda-clean": "scripts/aws-lambda/clean.sh"
   },
   "license": "MIT",
   "dependencies": {

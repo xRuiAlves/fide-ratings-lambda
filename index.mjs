@@ -14,14 +14,13 @@ const OPERATIONS = Object.freeze({
     getPlayerPersonalData: "getPlayerPersonalData"
 });
 
-const buildErrorResponse = (message) => ({
-    statusCode: 400,
-    body: message,
-});
+const buildErrorResponse = (message) => buildResponse(400, message);
 
-const buildSuccessMessage = (payload) => ({
-    statusCode: 200,
-    body: JSON.stringify(payload)
+const buildSuccessMessage = (payload) => buildResponse(200, JSON.stringify(payload));
+
+const buildResponse = (statusCode, payload) => ({
+    statusCode,
+    body: payload
 });
 
 export const handler = async(event) => {

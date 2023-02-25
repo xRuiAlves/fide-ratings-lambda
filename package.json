@@ -5,7 +5,9 @@
   "version": "1.0.0",
   "description": "A lambda function that wraps my fide-ratings-scraper project",
   "main": "index.mjs",
-  "scripts": {},
+  "scripts": {
+    "aws-lambda-configure": "scripts/aws-lambda/configure.sh"
+  },
   "license": "MIT",
   "dependencies": {
     "fide-ratings-scraper": "^1.0.4"

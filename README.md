@@ -1,4 +1,4 @@
-# Fide Ratings Lambda
+# Fide Ratings AWS Lambda
 
 A lambda function that wraps my [fide-ratings-scraper](github.com/xRuiAlves/fide-ratings-scraper/) project.
 
@@ -10,11 +10,25 @@ To configure the Lambda function, edit `scripts/aws-lambda-bundle.sh`:
 - `arn`: Lambda function's `ARN`
 - `timeout`: Lambda function's timeout (in seconds)
 
-Then, run:
+Then, run the following script, which leverages the `AWS` `cli`:
 
 ```
 npm run aws-lambda-configure
 ```
+
+## Publishing
+
+To publish the Lambda function, run:
+
+```
+npm run aws-lambda-publish
+```
+
+This will:
+
+- Clean the local bundle from previous builds;
+- Bundle the function assets in a `zip` file;
+- Upload the function's bundle to `AWS Lambda` using the `AWS` `cli`.
 
 ## License
 

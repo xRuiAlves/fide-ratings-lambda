@@ -9,5 +9,8 @@
   "license": "ISC",
   "dependencies": {
     "fide-ratings-scraper": "^1.0.4"
-  }
+  },
+  "keywords": [
+    "chess"
+  ]
 }

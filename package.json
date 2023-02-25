@@ -6,7 +6,8 @@
   "description": "A lambda function that wraps my fide-ratings-scraper project",
   "main": "index.mjs",
   "scripts": {
-    "aws-lambda-configure": "scripts/aws-lambda/configure.sh"
+    "aws-lambda-configure": "scripts/aws-lambda/configure.sh",
+    "aws-lambda-bundle": "scripts/aws-lambda/bundle.sh"
   },
   "license": "MIT",
   "dependencies": {

@@ -8,7 +8,8 @@
   "scripts": {
     "aws-lambda-configure": "scripts/aws-lambda/configure.sh",
     "aws-lambda-bundle": "scripts/aws-lambda/bundle.sh",
-    "aws-lambda-clean": "scripts/aws-lambda/clean.sh"
+    "aws-lambda-clean": "scripts/aws-lambda/clean.sh",
+    "aws-lambda-publish": "npm run aws-lambda-clean && npm run aws-lambda-bundle && scripts/aws-lambda/bundle.sh"
   },
   "license": "MIT",
   "dependencies": {

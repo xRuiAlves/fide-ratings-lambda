@@ -8,33 +8,28 @@
 	"item": [
 		{
 			"name": "getPlayerElo",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
 			"request": {
 				"method": "GET",
 				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"operation\": \"getPlayerElo\",\n    \"fideId\": 1962000\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
 				"url": {
-					"raw": "https://3b54krmkci54olgcmk7palf3ue0xmbok.lambda-url.eu-west-1.on.aws/",
+					"raw": "https://mik76pphacoyeatnv2ulw6mgbi0waxss.lambda-url.eu-west-1.on.aws?operation=getPlayerElo&fideId=1962000",
 					"protocol": "https",
 					"host": [
-						"3b54krmkci54olgcmk7palf3ue0xmbok",
+						"mik76pphacoyeatnv2ulw6mgbi0waxss",
 						"lambda-url",
 						"eu-west-1",
 						"on",
 						"aws"
 					],
-					"path": [
-						""
+					"query": [
+						{
+							"key": "operation",
+							"value": "getPlayerElo"
+						},
+						{
+							"key": "fideId",
+							"value": "1962000"
+						}
 					]
 				}
 			},
@@ -42,33 +37,28 @@
 		},
 		{
 			"name": "getPlayerHistory",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
 			"request": {
 				"method": "GET",
 				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"operation\": \"getPlayerHistory\",\n    \"fideId\": 1962000\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
 				"url": {
-					"raw": "https://3b54krmkci54olgcmk7palf3ue0xmbok.lambda-url.eu-west-1.on.aws/",
+					"raw": "https://mik76pphacoyeatnv2ulw6mgbi0waxss.lambda-url.eu-west-1.on.aws?operation=getPlayerHistory&fideId=1962000",
 					"protocol": "https",
 					"host": [
-						"3b54krmkci54olgcmk7palf3ue0xmbok",
+						"mik76pphacoyeatnv2ulw6mgbi0waxss",
 						"lambda-url",
 						"eu-west-1",
 						"on",
 						"aws"
 					],
-					"path": [
-						""
+					"query": [
+						{
+							"key": "operation",
+							"value": "getPlayerHistory"
+						},
+						{
+							"key": "fideId",
+							"value": "1962000"
+						}
 					]
 				}
 			},
@@ -76,33 +66,28 @@
 		},
 		{
 			"name": "getPlayerRank",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
 			"request": {
 				"method": "GET",
 				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"operation\": \"getPlayerRank\",\n    \"fideId\": 1962000\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
 				"url": {
-					"raw": "https://3b54krmkci54olgcmk7palf3ue0xmbok.lambda-url.eu-west-1.on.aws/",
+					"raw": "https://mik76pphacoyeatnv2ulw6mgbi0waxss.lambda-url.eu-west-1.on.aws?operation=getPlayerRank&fideId=1962000",
 					"protocol": "https",
 					"host": [
-						"3b54krmkci54olgcmk7palf3ue0xmbok",
+						"mik76pphacoyeatnv2ulw6mgbi0waxss",
 						"lambda-url",
 						"eu-west-1",
 						"on",
 						"aws"
 					],
-					"path": [
-						""
+					"query": [
+						{
+							"key": "operation",
+							"value": "getPlayerRank"
+						},
+						{
+							"key": "fideId",
+							"value": "1962000"
+						}
 					]
 				}
 			},
@@ -118,7 +103,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"operation\": \"getPlayerFullInfo\",\n    \"fideId\": 1962000\n}",
+					"raw": "",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -126,17 +111,24 @@
 					}
 				},
 				"url": {
-					"raw": "https://3b54krmkci54olgcmk7palf3ue0xmbok.lambda-url.eu-west-1.on.aws/",
+					"raw": "https://mik76pphacoyeatnv2ulw6mgbi0waxss.lambda-url.eu-west-1.on.aws?operation=getPlayerFullInfo&fideId=1962000",
 					"protocol": "https",
 					"host": [
-						"3b54krmkci54olgcmk7palf3ue0xmbok",
+						"mik76pphacoyeatnv2ulw6mgbi0waxss",
 						"lambda-url",
 						"eu-west-1",
 						"on",
 						"aws"
 					],
-					"path": [
-						""
+					"query": [
+						{
+							"key": "operation",
+							"value": "getPlayerFullInfo"
+						},
+						{
+							"key": "fideId",
+							"value": "1962000"
+						}
 					]
 				}
 			},
@@ -144,33 +136,28 @@
 		},
 		{
 			"name": "getPlayerPersonalData",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
 			"request": {
 				"method": "GET",
 				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"operation\": \"getPlayerPersonalData\",\n    \"fideId\": 1962000\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
 				"url": {
-					"raw": "https://3b54krmkci54olgcmk7palf3ue0xmbok.lambda-url.eu-west-1.on.aws/",
+					"raw": "https://mik76pphacoyeatnv2ulw6mgbi0waxss.lambda-url.eu-west-1.on.aws?operation=getPlayerPersonalData&fideId=1962000",
 					"protocol": "https",
 					"host": [
-						"3b54krmkci54olgcmk7palf3ue0xmbok",
+						"mik76pphacoyeatnv2ulw6mgbi0waxss",
 						"lambda-url",
 						"eu-west-1",
 						"on",
 						"aws"
 					],
-					"path": [
-						""
+					"query": [
+						{
+							"key": "operation",
+							"value": "getPlayerPersonalData"
+						},
+						{
+							"key": "fideId",
+							"value": "1962000"
+						}
 					]
 				}
 			},

@@ -16,12 +16,12 @@ Then, run the following script, which leverages the `AWS` `cli`:
 npm run aws-lambda-configure
 ```
 
-## Publishing
+## Deploying
 
-To publish the Lambda function, run:
+To deploy the Lambda function, run:
 
 ```
-npm run aws-lambda-publish
+npm run aws-lambda-deploy
 ```
 
 This will:

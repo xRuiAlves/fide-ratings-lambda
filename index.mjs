@@ -25,12 +25,25 @@ const buildSuccessMessage = (payload) => ({
 });
 
 export const handler = async({operation, fideId}) => {
-    if (!OPERATIONS[operation]) {
-        return buildErrorResponse(`You must specify a valid 'operation' within the request's body. Valid operations: [${Object.values(OPERATIONS).join(", ")}].`); 
-    }
-
     if (!fideId || isNaN(fideId)) {
         return buildErrorResponse("You must specify a valid 'fideId' number within the request's body."); 
     }
-    return buildSuccessMessage("Hello from Lambda");
+
+    switch (operation) {
+        case OPERATIONS.getPlayerElo:
+            return buildSuccessMessage(await getPlayerElo(fideId));
+        case OPERATIONS.getPlayerHistory:
+            return buildSuccessMessage(await getPlayerHistory(fideId));
+        case OPERATIONS.getPlayerRank:
+            return buildSuccessMessage(await getPlayerRank(fideId));
+        case OPERATIONS.getPlayerFullInfo:
+                return buildSuccessMessage(await getPlayerFullInfo(fideId));
+        case OPERATIONS.getPlayerPersonalData:
+            return buildSuccessMessage(await getPlayerPersonalData(fideId));
+        default:
+            return buildErrorResponse(
+                `You must specify a valid 'operation' within the request's body. Valid operations: [${Object.values(OPERATIONS).join(", ")}].`
+            ); 
+
+    }
 };

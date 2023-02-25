@@ -25,13 +25,14 @@ const buildResponse = (statusCode, payload) => ({
 
 export const handler = async(event) => {
     const { operation, fideId } = event.queryStringParameters;
+
     console.info(`Event query parameters: ${event.queryStringParameters}`);
     console.info(`Operation: ${operation}`);
     console.info(`Operation: ${fideId}`);
 
     if (!fideId || isNaN(fideId)) {
         console.error("Invalid fide ID");
-        return buildErrorResponse("You must specify a valid 'fideId' number within the request's body."); 
+        return buildErrorResponse("You must specify a valid 'fideId' as a query parameter."); 
     }
 
     switch (operation) {
@@ -63,7 +64,7 @@ export const handler = async(event) => {
         default:
             console.error("Invalida operation");
             return buildErrorResponse(
-                `You must specify a valid 'operation' within the request's body. Valid operations: [${Object.values(OPERATIONS).join(", ")}].`
+                `You must specify a valid 'operation' as a query parameter. Valid operations: [${Object.values(OPERATIONS).join(", ")}].`
             ); 
 
     }

@@ -1,0 +1,180 @@
+{
+	"info": {
+		"_postman_id": "91794d9d-b3dd-4ba3-bc2f-9673fe07b183",
+		"name": "fide-ratings-lambda",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24040993"
+	},
+	"item": [
+		{
+			"name": "getPlayerElo",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"operation\": \"getPlayerElo\",\n    \"fideId\": 1962000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://3b54krmkci54olgcmk7palf3ue0xmbok.lambda-url.eu-west-1.on.aws/",
+					"protocol": "https",
+					"host": [
+						"3b54krmkci54olgcmk7palf3ue0xmbok",
+						"lambda-url",
+						"eu-west-1",
+						"on",
+						"aws"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPlayerHistory",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"operation\": \"getPlayerHistory\",\n    \"fideId\": 1962000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://3b54krmkci54olgcmk7palf3ue0xmbok.lambda-url.eu-west-1.on.aws/",
+					"protocol": "https",
+					"host": [
+						"3b54krmkci54olgcmk7palf3ue0xmbok",
+						"lambda-url",
+						"eu-west-1",
+						"on",
+						"aws"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPlayerRank",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"operation\": \"getPlayerRank\",\n    \"fideId\": 1962000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://3b54krmkci54olgcmk7palf3ue0xmbok.lambda-url.eu-west-1.on.aws/",
+					"protocol": "https",
+					"host": [
+						"3b54krmkci54olgcmk7palf3ue0xmbok",
+						"lambda-url",
+						"eu-west-1",
+						"on",
+						"aws"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPlayerFullInfo",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"operation\": \"getPlayerFullInfo\",\n    \"fideId\": 1962000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://3b54krmkci54olgcmk7palf3ue0xmbok.lambda-url.eu-west-1.on.aws/",
+					"protocol": "https",
+					"host": [
+						"3b54krmkci54olgcmk7palf3ue0xmbok",
+						"lambda-url",
+						"eu-west-1",
+						"on",
+						"aws"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPlayerPersonalData",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"operation\": \"getPlayerPersonalData\",\n    \"fideId\": 1962000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://3b54krmkci54olgcmk7palf3ue0xmbok.lambda-url.eu-west-1.on.aws/",
+					"protocol": "https",
+					"host": [
+						"3b54krmkci54olgcmk7palf3ue0xmbok",
+						"lambda-url",
+						"eu-west-1",
+						"on",
+						"aws"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

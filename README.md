@@ -1,6 +1,6 @@
 # Fide Ratings AWS Lambda
 
-A lambda function that wraps my [fide-ratings-scraper](github.com/xRuiAlves/fide-ratings-scraper/) project.
+A lambda function that wraps my [fide-ratings-scraper](https://github.com/xRuiAlves/fide-ratings-scraper/) project.
 
 ## Configuration
 

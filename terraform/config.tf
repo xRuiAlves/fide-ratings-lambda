@@ -14,6 +14,11 @@ resource "aws_lambda_function" "fide-ratings" {
   ]
 }
 
+resource "aws_lambda_function_url" "fide-ratings" {
+  function_name      = aws_lambda_function.fide-ratings.function_name
+  authorization_type = "NONE"
+}
+
 resource "aws_iam_role" "fide-ratings" {
   name = "fide-ratings-lambda-role"
 

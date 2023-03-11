@@ -5,12 +5,7 @@
   "version": "1.0.0",
   "description": "A lambda function that wraps my fide-ratings-scraper project",
   "main": "index.mjs",
-  "scripts": {
-    "aws-lambda-configure": "scripts/aws-lambda/configure.sh",
-    "aws-lambda-bundle": "scripts/aws-lambda/bundle.sh",
-    "aws-lambda-clean": "scripts/aws-lambda/clean.sh",
-    "aws-lambda-deploy": "npm run aws-lambda-clean && npm run aws-lambda-bundle && scripts/aws-lambda/deploy.sh"
-  },
+  "scripts": {},
   "license": "MIT",
   "dependencies": {
     "fide-ratings-scraper": "^1.0.6"

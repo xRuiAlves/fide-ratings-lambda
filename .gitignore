@@ -1,3 +1,4 @@
+### Node ###
 # Logs
 logs
 *.log
@@ -128,6 +129,7 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+### Node Patch ###
 # Serverless Webpack directories
 .webpack/
 
@@ -136,6 +138,7 @@ dist
 # SvelteKit build / generate output
 .svelte-kit
 
+### Terraform ###
 # Local .terraform directories
 **/.terraform/*
 
@@ -208,5 +211,7 @@ override.tf.json
 .terraformrc
 terraform.rc
 
+
+### Custom ###
 # AWS Lambda Bundle zip
 fide-ratings.zip

@@ -13,7 +13,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "fide-ratings-scraper": "^1.0.4"
+    "fide-ratings-scraper": "^1.0.6"
   },
   "keywords": [
     "chess"

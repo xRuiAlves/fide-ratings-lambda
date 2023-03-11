@@ -2,6 +2,12 @@ provider "aws" {
   region = "eu-west-1"
 }
 
+data "archive_file" "zip-lambda-function-source-code" {
+  type        = "zip"
+  source_dir = "../src"
+  output_path = "fide-ratings.zip"
+}
+
 resource "aws_lambda_function" "fide-ratings" {
   filename      = "fide-ratings.zip"
   function_name = "fide-ratings"

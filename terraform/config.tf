@@ -9,9 +9,9 @@ data "archive_file" "zip-lambda-function-source-code" {
 }
 
 resource "aws_lambda_function" "fide-ratings" {
-  filename      = "fide-ratings.zip"
   function_name = "fide-ratings"
   role          = aws_iam_role.fide-ratings.arn
+  filename      = "fide-ratings.zip"
   handler       = "index.handler"
   runtime       = "nodejs18.x"
   timeout       = 60 # 1 minute
@@ -23,6 +23,16 @@ resource "aws_lambda_function" "fide-ratings" {
 resource "aws_lambda_function_url" "fide-ratings" {
   function_name      = aws_lambda_function.fide-ratings.function_name
   authorization_type = "NONE"
+  
+  # Allow cors on all origins
+  cors {
+    allow_credentials = false
+    allow_origins     = ["*"]
+    allow_methods     = []
+    allow_headers     = []
+    expose_headers    = []
+    max_age           = 0
+  }
 }
 
 resource "aws_iam_role" "fide-ratings" {

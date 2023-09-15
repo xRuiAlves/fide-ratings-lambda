@@ -62,7 +62,7 @@ export const handler = async(event) => {
             console.info(`Player ${fideId} personal data: ${personalData}`);
             return buildSuccessMessage(personalData);
         default:
-            console.error("Invalida operation");
+            console.error("Invalid operation");
             return buildErrorResponse(
                 `You must specify a valid 'operation' as a query parameter. Valid operations: [${Object.values(OPERATIONS).join(", ")}].`
             );

@@ -28,7 +28,7 @@ export const handler = async(event) => {
 
     console.info(`Event query parameters: ${event.queryStringParameters}`);
     console.info(`Operation: ${operation}`);
-    console.info(`Operation: ${fideId}`);
+    console.info(`FIDE ID: ${fideId}`);
 
     if (!fideId || isNaN(fideId)) {
         console.error("Invalid fide ID");

@@ -1,16 +1,16 @@
-import { 
-    getPlayerElo, 
-    getPlayerHistory, 
-    getPlayerRank, 
-    getPlayerFullInfo, 
-    getPlayerPersonalData 
+import {
+    getPlayerElo,
+    getPlayerHistory,
+    getPlayerRank,
+    getPlayerFullInfo,
+    getPlayerPersonalData
 } from "fide-ratings-scraper";
 
 const OPERATIONS = Object.freeze({
-    getPlayerElo: "getPlayerElo", 
-    getPlayerHistory: "getPlayerHistory", 
-    getPlayerRank: "getPlayerRank", 
-    getPlayerFullInfo: "getPlayerFullInfo", 
+    getPlayerElo: "getPlayerElo",
+    getPlayerHistory: "getPlayerHistory",
+    getPlayerRank: "getPlayerRank",
+    getPlayerFullInfo: "getPlayerFullInfo",
     getPlayerPersonalData: "getPlayerPersonalData"
 });
 
@@ -32,7 +32,7 @@ export const handler = async(event) => {
 
     if (!fideId || isNaN(fideId)) {
         console.error("Invalid fide ID");
-        return buildErrorResponse("You must specify a valid 'fideId' as a query parameter."); 
+        return buildErrorResponse("You must specify a valid 'fideId' as a query parameter.");
     }
 
     switch (operation) {
@@ -65,7 +65,7 @@ export const handler = async(event) => {
             console.error("Invalida operation");
             return buildErrorResponse(
                 `You must specify a valid 'operation' as a query parameter. Valid operations: [${Object.values(OPERATIONS).join(", ")}].`
-            ); 
+            );
 
     }
 };

@@ -2,7 +2,9 @@
 
 A lambda function that wraps my [fide-ratings-scraper](https://github.com/xRuiAlves/fide-ratings-scraper/) project.
 
+## Infrastructure Configuration and Management
 
+To manage the infrastructure of the Lambda, use the Terraform definitions from the [terraform](terraform/) directory.
 
 ## Usage
 
